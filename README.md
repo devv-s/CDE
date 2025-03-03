@@ -17,16 +17,28 @@ Most of the OSes out there (like Windows, Mac or other Linux distros) have sever
 
 Including other common features/behaviours. This project aims to cover to components and features as much as possible. Check below for what is on the roadmap, what's in-progress and what has been completed. This checklist will be based on RHEL based distros using Wayland.
 
-The list follows the component-behaviour/feature pattern which means that all the expected behaviours listed are categorized by the components they are related with.
+The list is of the behaviours/features, categorized by the scope they are related with. Priority # represents the severity of the requirement. Higher the priority #, greater its need is.
+
+### Global Behaviours
+
+- [ ] (P5) A (UI) greeter is loaded for login.
+- [ ] (P4) Successful login auto starts the Window Manager.
+- [ ] (P4) Window manager bootstraps core widgets at startup.
+- [ ] (P3) Screen can be locked.
+- [ ] (P5) A terminal emulator app must be setup.
+- [ ] (P5) A browser app must be setup.
 
 ### Task/Status Bar
 
-- [ ] Has a widget that displays time.
-    - [ ] Is updated at least once per minute.
-    - [ ] Shows all the timezone clocks on hover.
-    - [ ] (Optional) Opens up an app to set clock time. 
+- [ ] (P4) Has a widget that displays time.
+    - [ ] (P4) Is updated at least once per minute.
+    - [ ] (P2) Shows all the timezone clocks on hover.
+    - [ ] (P1) (Optional) Opens up an app to set clock time. 
 - [ ] Has a widget that displays current date
-    - [ ] Opens up an app to set calendar date. 
+    - [ ] (P2) Opens up an app to set calendar date. 
+- [ ] (P5) Has a widget that displays active keyboard layout. 
+    - [ ] (P4) Has a toggle keyboard layout shortcut key.
+- [ ] (P5) Has a widget that displays internet status. 
 
 
 
