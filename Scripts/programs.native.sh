@@ -2,10 +2,16 @@
 
 # path to the script responsible for enabling the repositories.
 REPO_SCRIPT="./repositories.sh"
+DEPENDENCY_SCRIPT="./programs.dependency.sh"
 
 get() {
   dnf install -y --setopt=install_weak_deps=False "$@"
 }
+
+# Installing system libraries and general dependencies.
+if [[ -f "$DEPENDENCY_SCRIPT" ]]; then
+  "$DEPENDENCY_SCRIPT"
+fi
 
 get \
 axel \
