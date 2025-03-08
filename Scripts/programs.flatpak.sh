@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # installing flatpak itself, it is usally pre-installed.
-dnf install flatpak
+dnf install -y flatpak
 
 # installing the flatpaks
-flatpak install flathub app.zen_browser.zen
-flatpak install com.visualstudio.code
+flatpak install --assumeyes flathub app.zen_browser.zen
+flatpak install --assumeyes com.visualstudio.code
 
