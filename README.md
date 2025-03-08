@@ -7,14 +7,20 @@ This is for any person who is like the owner of this project/repo who is 'famili
 
 ## Getting Started
 1. Clone this repo on your system at any location of your choice (e.g. ~/Downloads).
-	`git clone https://github.com/devv-s/CDE.git`
+	```bash
+	git clone https://github.com/devv-s/CDE.git
+	```
 
 2. Go into the cloned directory.
-	`cd CDE`
+	```bash
+	cd CDE
+	```
 
 3. Run the setup script as privileged rights in your environment.
-	`chmod u+x ./Setup.sh`
-	`sudo -E ./Setup.sh`
+	```bash
+	chmod u+x ./Setup.sh
+	sudo -E ./Setup.sh
+	```
 
 
 ## Roadmap
