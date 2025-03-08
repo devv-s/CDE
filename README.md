@@ -1,6 +1,6 @@
 # CDE (Custom Desktop Environment)
 
-This project aims to provide a pre-configured set of widgets with a window manager and provide a simple, decent looking desktop UI which is functional right out of box.
+This project aims to provide a pre-configured set of apps, widgets with a window manager and provide a simple, decent looking desktop UI which is functional right out of box.
 
 #### Target Audience
 This is for any person who is like the owner of this project/repo who is 'familiar' with linux, not an expert, not even a mediocre. Just a noob.
@@ -21,6 +21,7 @@ The list is of the behaviours/features, categorized by the scope they are relate
 
 ### Global Behaviours
 
+- [x] (P4) Common, useful environment variables are set.
 - [ ] (P5) A (UI) greeter is loaded for login.
 - [ ] (P4) Successful login auto starts the Window Manager.
 - [ ] (P4) Window manager bootstraps core widgets at startup.
