@@ -5,6 +5,18 @@ This project aims to provide a pre-configured set of apps, widgets with a window
 #### Target Audience
 This is for any person who is like the owner of this project/repo who is 'familiar' with linux, not an expert, not even a mediocre. Just a noob.
 
+## Getting Started
+1. Clone this repo on your system at any location of your choice (e.g. ~/Downloads).
+	`git clone https://github.com/devv-s/CDE.git`
+
+2. Go into the cloned directory.
+	`cd CDE`
+
+3. Run the setup script as privileged rights in your environment.
+	`chmod u+x ./Setup.sh`
+	`sudo -E ./Setup.sh`
+
+
 ## Roadmap
 
 Most of the OSes out there (like Windows, Mac or other Linux distros) have several common components, namely:
@@ -21,6 +33,7 @@ The list is of the behaviours/features, categorized by the scope they are relate
 
 ### Global Behaviours
 
+- [x] (P5) A decent browser is available.
 - [x] (P4) Common, useful environment variables are set.
 - [ ] (P5) A (UI) greeter is loaded for login.
 - [ ] (P4) Successful login auto starts the Window Manager.

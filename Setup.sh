@@ -1,13 +1,20 @@
 #!/bin/bash
 
-PROGS_INSTALL_SCRIPT="./Scripts/programs.dnf.sh"
+NATIVE_PROGRAMS_SCRIPT="./Scripts/programs.native.sh"
+FLATPAK_PROGRAMS_SCRIPT="./Scripts/programs.flatpak.sh"
 USER_SHELL_CONFIGS="./Configs/.bashrc.d/"
 
 # ------------------------------------------------------
-# FUNCTIONS FOR BETTER FLEXIBILITY AND CODE ORGANIZATION.
+# UTILITY FUNCTIONS FOR BETTER FLEXIBILITY AND CODE ORGANIZATION.
 # ------------------------------------------------------
 install_all_programs() {
-  "$PROGS_INSTALL_SCRIPT"
+  if [[ -f "$NATIVE_PROGRAMS_SCRIPT" ]]; then
+    "$NATIVE_PROGRAMS_SCRIPT"
+  fi
+
+  if [[ -f "$FLATPAK_PROGRAMS_SCRIPT" ]]; then
+    "$FLATPAK_PROGRAMS_SCRIPT"
+  fi
 }
 
 set_default_user_configs() {
@@ -31,9 +38,7 @@ set_default_user_configs() {
 # ------------------------------------------------------
 # PHASE: CONFIGURE ADDITIONAL REPOS, INSTALL PROGRAMS.
 # ------------------------------------------------------
-if [[ -f "$PROGS_INSTALL_SCRIPT" ]]; then
   install_all_programs
-fi
 
 # ------------------------------------------------------
 # PHASE: CONFIGURE USER ENV VARIABLES, CONFIGURATIONS.
