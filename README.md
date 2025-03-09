@@ -40,6 +40,7 @@ The list is of the behaviours/features, categorized by the scope they are relate
 ### Global Behaviours
 
 - [x] (P5) A decent browser is available.
+- [x] (P5) A decent terminal emulator is available.
 - [x] (P4) Common, useful environment variables are set.
 - [ ] (P5) A (UI) greeter is loaded for login.
 - [ ] (P4) Successful login auto starts the Window Manager.
