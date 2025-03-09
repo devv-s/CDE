@@ -15,8 +15,10 @@ fi
 
 get \
 axel \
+gdisk \
 git \
 neovim \
+openrgb \
 qbittorrent \
 torbrowser-launcher
 
