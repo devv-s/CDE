@@ -5,6 +5,7 @@ dnf install -y --setopt=install_weak_deps=False \
 cmake \
 gcc \
 gtk3-devel \
+libi2c-devel \
 libglibutil-devel \
 libdbusmenu-gtk3-devel \
 gtk-layer-shell-devel \
